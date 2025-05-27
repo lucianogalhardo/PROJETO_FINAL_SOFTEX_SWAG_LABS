@@ -1,0 +1,34 @@
+# Ignorar ambiente virtual
+venv/
+.env/
+.envrc
+
+# Arquivos Python compilados
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Configurações do sistema/macOS
+.DS_Store
+
+# Diretórios de testes temporários
+reports/
+output/
+logs/
+
+# Arquivos do Selenium (se houver capturas, por exemplo)
+*.log
+*.png
+*.jpg
+screenshots/
+
+# IDEs e editores
+.vscode/
+.idea/
+
+# Arquivos de comportamento do Behave
+*.json
+*.html
+*.xml
+
