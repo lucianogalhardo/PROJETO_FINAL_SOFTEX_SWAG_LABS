@@ -2,7 +2,6 @@
 from features.helpers.driver import get_driver
 from features.pages.base_page import *
 from selenium.webdriver.support.ui import Select
-from features.pages.ploblem_user_page import preencher_campo_usuario
 import pyautogui
 import time
 

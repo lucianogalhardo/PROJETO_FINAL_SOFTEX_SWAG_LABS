@@ -4,6 +4,7 @@ from features.helpers.driver import get_driver
 from features.pages.base_page import *
 from features.pages.ploblem_user_page import preencher_dados_usuario
 
+
 @given(u'que o usuário está na página de login')
 def acessar_site_aplicacao(context):
     get_driver().get("https://www.saucedemo.com/")
