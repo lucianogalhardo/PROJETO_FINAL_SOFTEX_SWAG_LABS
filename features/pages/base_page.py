@@ -38,7 +38,11 @@ def find_product_by_name(locator):
 def click_poupup(opcao):
     if (opcao == "opcao_a"):
         pyautogui.click(790, 411)
-    elif (opcao == "opcao_b"):
+    elif (opcao == "ana"):
+        pyautogui.click(790, 411)
+    elif (opcao == "janielson") 
+        pyautogui.click(790, 411)
+    elif (opcao == "leo") 
         pyautogui.click(790, 411)
 
 def print_mouse_position():
