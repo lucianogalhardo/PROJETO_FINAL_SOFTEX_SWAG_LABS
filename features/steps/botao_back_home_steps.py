@@ -1,6 +1,7 @@
 from behave import given, when, then
 from features.pages.visual_user_login_page import realizar_login
 from features.pages.botao_back_home_page import *
+from features.pages.base_page import *
 
 
 

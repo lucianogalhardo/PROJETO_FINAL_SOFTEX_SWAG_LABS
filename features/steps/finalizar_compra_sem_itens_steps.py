@@ -1,6 +1,7 @@
 from behave import given, when, then
 from features.pages.visual_user_login_page import realizar_login
 from features.pages.finalizar_compra_sem_itens_page import *
+from features.pages.base_page import *
 
 @given('que o usuário está logado com "visual_user"')
 def step_login_usuario(context):

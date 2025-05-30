@@ -24,9 +24,9 @@ def wait_for_element_by_id(element_id, timeout=10):
 
 def click_poupup(opcao):
     if (opcao == "opcao_a"):
-        pyautogui.click(790, 411)
+        pyautogui.click(883, 465)
     elif (opcao == "opcao_b"):
-        pyautogui.click(790, 411)
+        pyautogui.click(883, 465)
 
 def print_mouse_position():
     print(pyautogui.position())

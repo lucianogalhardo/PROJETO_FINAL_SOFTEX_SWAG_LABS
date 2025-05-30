@@ -1,5 +1,6 @@
 from behave import given, when, then
 from features.pages.visual_user_login_page import *
+from features.pages.base_page import *
 
 
 @given('que o usuário está na página de login')
