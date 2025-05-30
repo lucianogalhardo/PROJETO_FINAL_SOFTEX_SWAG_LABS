@@ -2,7 +2,7 @@ from behave import given, when, then
 from features.pages import login_page
 from features.pages import mensagem_page  
 from features.pages import base_page
-from features.pages.base_page import click_poupup
+from features.pages.base_page import click_poupup, print_mouse_position
 from selenium.webdriver.common.by import By
 import pyautogui
 import time
@@ -10,9 +10,10 @@ import time
 @given(u'que o usuário esteja logado com o usuário "standard_user"')
 def acessar_usuario(context):
     login_page.login_usuario("standard_user")
-    time.sleep(3)
+    time.sleep(5)
 
-    click_poupup("ana")
+    #print_mouse_position()
+    click_poupup("opcao_a")
     time.sleep(3)
 
 
