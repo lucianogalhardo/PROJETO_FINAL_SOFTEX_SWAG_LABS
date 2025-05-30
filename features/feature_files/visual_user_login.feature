@@ -5,7 +5,7 @@ Funcionalidade: Login de usuário
 
 @visual_login
 Cenário: Usuário faz login com sucesso
-  Dado que o usuário está na página de login
+  Dado que o usuário está na página para login
   Quando o usuário inserir o Username "visual_user" e Password "secret_sauce"
-  E clica no botão de login
-  Então o usuário deve ser redirecionado para a página de inventário
+  E clicar no botão de login
+  Então o usuário deve ser direcionado para a página de inventário

@@ -8,4 +8,4 @@ Cenário: Validar botão Continue Shopping
   Dado que o usuário está logado com "visual_user"
   E o usuário acessa o carrinho
   Quando o usuário clica no botão "Continue Shopping"
-  Então o usuário deve ser redirecionado para a página de inventário
+  Então o usuário deverá ser redirecionado para a página de inventário

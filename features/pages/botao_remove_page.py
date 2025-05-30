@@ -24,8 +24,9 @@ def verificar_item_no_carrinho():
 
 # removendo o item do carrinho
 def remover_item_do_carrinho():
-    find_element(BOTAO_CONTINUAR_COMPRANDO).click()
     find_element(BOTAO_REMOVE).click()
+    time.sleep(5)
+    find_element(BOTAO_CONTINUAR_COMPRANDO).click()
 
 # VERIFICANDO SE O ITEM FOI REMOVIDO DO CARRINHO
 def verificar_item_removido():

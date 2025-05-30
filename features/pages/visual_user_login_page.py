@@ -1,5 +1,5 @@
 from features.helpers.driver import get_driver
-from features.pages.base_page import find_element_by_id
+from features.pages.base_page import *
 from selenium.webdriver.support.ui import Select
 import time
 

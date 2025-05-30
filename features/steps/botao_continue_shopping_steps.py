@@ -12,3 +12,7 @@ def step_acessar_carrinho(context):
 @when('o usuário clica no botão "Continue Shopping"')
 def step_clica_continue_shopping(context):
     clicar_continue_shopping()
+
+@then('o usuário deverá ser redirecionado para a página de inventário')
+def step_pagina_inventario(context):
+    validar_pagina_inventario()

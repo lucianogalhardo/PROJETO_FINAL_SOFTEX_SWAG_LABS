@@ -46,7 +46,7 @@ def clicar_continue():
 
 
 def clicar_finish():
-    find_element_by_id("finish").click()
+    find_element_by_id(BOTAO_FINISH).click()
     time.sleep(1)
 
 
