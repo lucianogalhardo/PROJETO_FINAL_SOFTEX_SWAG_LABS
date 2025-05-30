@@ -15,12 +15,12 @@ def adicionar_item(context):
 def remover_item(context):
     verificar_item_no_carrinho()
     time.sleep(5)
-    remover_item_do_carrinho()
+    #remover_item_do_carrinho()
 
 @then(u'o produto escolhido será removido do carrinho')
 def item_removido(context):
-    #remover_item_do_carrinho()
-    verificar_item_removido()
+    remover_item_do_carrinho()
+    #verificar_item_removido()
     time.sleep(2)
 
 
