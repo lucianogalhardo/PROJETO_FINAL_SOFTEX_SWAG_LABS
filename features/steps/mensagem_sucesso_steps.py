@@ -13,7 +13,7 @@ def acessar_usuario(context):
     time.sleep(5)
 
     #print_mouse_position()
-    click_poupup("opcao_a")
+    click_poupup("ana")
     time.sleep(3)
 
 

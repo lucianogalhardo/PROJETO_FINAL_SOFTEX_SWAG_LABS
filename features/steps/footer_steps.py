@@ -11,7 +11,7 @@ def acessar_usuario(context):
     login_page.login_usuario("standard_user")
     time.sleep(5)
     
-    click_poupup("opcao_a")
+    click_poupup("ana")
 
 
 @when('ele visualiza a página de inventário')

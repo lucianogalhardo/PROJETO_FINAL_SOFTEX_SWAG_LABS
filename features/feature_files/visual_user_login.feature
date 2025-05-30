@@ -3,7 +3,7 @@ Funcionalidade: Login de usuário
     Quero acessar a página de inventário
     Para realizar compras
 
-@login
+@visual_login
 Cenário: Usuário faz login com sucesso
   Dado que o usuário está na página de login
   Quando o usuário inserir o Username "visual_user" e Password "secret_sauce"
