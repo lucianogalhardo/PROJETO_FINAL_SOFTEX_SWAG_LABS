@@ -2,6 +2,7 @@ from features.helpers.driver import get_driver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import pyautogui
 
 def find_element(locator):
     return get_driver().find_element(By.CSS_SELECTOR, locator)
@@ -20,3 +21,17 @@ def wait_for_element(locator, timeout):
     return WebDriverWait(get_driver(), timeout).until(
         EC.presence_of_all_elements_located(element)
     )
+
+def find_product_by_name(locator):
+    return get_driver().find_element(By.XPATH, locator)
+
+
+def click_poupup(opcao):
+    if (opcao == "opcao_a"):
+        pyautogui.click(790, 411)
+    elif (opcao == "opcao_b"):
+        pyautogui.click(790, 411)
+
+def print_mouse_position():
+    print(pyautogui.position())
+    
