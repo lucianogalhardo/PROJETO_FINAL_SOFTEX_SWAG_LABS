@@ -9,11 +9,10 @@ from behave.model_core import Status
 # HOOKS
 def before_scenario(context, scenario):
     service = Service(ChromeDriverManager().install())
-    # options = webdriver.ChromeOptions()
     driver = webdriver.Chrome(service=service)
     driver.implicitly_wait(10)
-    # context.driver.set_window_position(2000, 0)
     set_driver(driver)
+    context.driver = driver
 
 def after_scenario(context, scenario):
     print(scenario.name)
