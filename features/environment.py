@@ -10,6 +10,7 @@ from behave.model_core import Status
 def before_scenario(context, scenario):
     service = Service(ChromeDriverManager().install())
     driver = webdriver.Chrome(service=service)
+    driver.maximize_window()
     driver.implicitly_wait(10)
     set_driver(driver)
     context.driver = driver
