@@ -40,9 +40,9 @@ def click_poupup(opcao):
         pyautogui.click(790, 411)
     elif (opcao == "ana"):
         pyautogui.click(790, 411)
-    elif (opcao == "janielson") 
+    elif (opcao == "janielson"):
         pyautogui.click(790, 411)
-    elif (opcao == "leo") 
+    elif (opcao == "leo"):
         pyautogui.click(790, 411)
 
 def print_mouse_position():
