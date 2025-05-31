@@ -9,7 +9,7 @@ Contexto: Logar na aplicação
   Quando o usuário preenche o usuário "error_user" e a senha "secret_sauce"
   Então o usuário deve ser redirecionado para a tela de inventário
 
- @ui @funcional
+ @ui_funcional
   Cenário: Verifica se o botão muda para "Remove" após adicionar produto ao carrinho
     Quando o usuário clica em "Add to cart" no produto "Sauce Labs Onesie"
     Então o botão deve mudar para "Remove"

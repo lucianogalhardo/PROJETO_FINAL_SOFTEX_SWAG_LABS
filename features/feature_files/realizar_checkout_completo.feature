@@ -10,7 +10,7 @@ Contexto: Logar na aplicação
   Quando o usuário preenche o usuário "error_user" e a senha "secret_sauce"
   Então o usuário deve ser redirecionado para a tela de inventário
 
- @smoke @aceitacao
+ @smoke_aceitacao
   Cenário: Usuário finaliza uma compra com sucesso
     Dado o usuário adiciona o produto "Sauce Labs Backpack" ao carrinho
     Quando o usuário acessa o carrinho e clica em "Checkout"

@@ -9,7 +9,7 @@ Contexto: Logar na aplicação
   Quando o usuário preenche o usuário "error_user" e a senha "secret_sauce"
   Então o usuário deve ser redirecionado para a tela de inventário
 
- @validacao @funcional
+ @validacao_funcional
   Cenário: Usuário tenta avançar sem preencher o sobrenome
     Dado o usuário adiciona o produto "Sauce Labs Bolt T-Shirt" ao carrinho para validação
     E o usuário acessa o carrinho e clica em "Checkout"

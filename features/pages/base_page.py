@@ -13,7 +13,7 @@ def find_elements(locator):
 def get_element_text(locator):
     return find_element(locator).text
 
-def get_element_text(locator):
+def get_element_text_(locator):
     return find_element(locator).get_attribute("value")
 
 def get_element_text_get_attribute(locator):
