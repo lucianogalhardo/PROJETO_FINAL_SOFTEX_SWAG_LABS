@@ -7,21 +7,21 @@ import time
 URL_LOGIN = "https://www.saucedemo.com/"
 CAMPO_USERNAME = "user-name"
 CAMPO_PASSWORD = "password"
-BOTAO_LOGIN = "login-button"
+BOTAO_LOGIN = "#login-button"
 
 
 def acessar_page():
-    get_driver().get("https://www.saucedemo.com/")
+    get_driver().get(URL_LOGIN)
     time.sleep(2)
 
 def inserir_credenciais(username, password):
-    find_element_by_id("user-name").send_keys(username)
-    find_element_by_id("password").send_keys(password)
+    find_element_by_id(CAMPO_USERNAME).send_keys(username)
+    find_element_by_id(CAMPO_PASSWORD).send_keys(password)
     time.sleep(1)
 
 def clicar_botao_login():
-    find_element_by_id("login-button").click()
-    time.sleep(2)
+    find_element(BOTAO_LOGIN).click()
+    time.sleep(5)
 
 def validar_pagina_inventario():
     url_atual = get_driver().current_url

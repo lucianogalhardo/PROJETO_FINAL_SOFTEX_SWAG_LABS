@@ -3,6 +3,13 @@ Funcionalidade: Validação do botão "Back Home"
   Quero poder retornar para a página de inventário
   Para continuar navegando ou comprando mais produtos
 
+Contexto:
+  Dado que o usuário está na página para login
+  Quando o usuário inserir o Username "visual_user" e Password "secret_sauce"
+  E clicar no botão de login
+  Então o usuário deve ser direcionado para a página de inventário
+
+
 @smoke_botao_back_home
 Cenário: Validar redirecionamento ao clicar no botão "Back Home"
   Dado que o usuário está logado com "visual_user"

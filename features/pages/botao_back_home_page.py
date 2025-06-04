@@ -18,30 +18,30 @@ BOTAO_BACK_HOME = "back-to-products"
 
 def acessar_carrinho_com_um_item():
     
-    get_driver().get("https://www.saucedemo.com/inventory.html")
-    time.sleep(2)
+    # get_driver().get("https://www.saucedemo.com/inventory.html")
+    # time.sleep(2)
 
-    find_element_by_id("add-to-cart-sauce-labs-backpack").click()
+    find_element_by_id(BOTAO_ADD_CARRINHO).click()
     time.sleep(1)
     
-    find_element_by_class("shopping_cart_link").click()
+    find_element_by_class(LINK_CARRINHO).click()
     time.sleep(2)
 
 
 def clicar_checkout():
-    find_element_by_id("checkout").click()
+    find_element_by_id(BOTAO_CHECKOUT).click()
     time.sleep(1)
 
 
 def preencher_informacoes_usuario(first_name, last_name, zip_code):
-    find_element_by_id("first-name").send_keys(first_name)
-    find_element_by_id("last-name").send_keys(last_name)
-    find_element_by_id("postal-code").send_keys(zip_code)
+    find_element_by_id(CAMPO_FIRST_NAME).send_keys(first_name)
+    find_element_by_id(CAMPO_LAST_NAME).send_keys(last_name)
+    find_element_by_id(CAMPO_ZIP_CODE).send_keys(zip_code)
     time.sleep(1)
 
 
 def clicar_continue():
-    find_element_by_id("continue").click()
+    find_element_by_id(BOTAO_CONTINUE).click()
     time.sleep(1)
 
 
@@ -51,12 +51,12 @@ def clicar_finish():
 
 
 def validar_mensagem_confirmacao():
-    texto = find_element_by_id("checkout_complete_container").text
+    texto = find_element_by_id(CONTAINER_CONFIRMACAO).text
     assert "Thank you for your order!" in texto
 
 
 def clicar_botao_back_home():
-    find_element_by_id("back-to-products").click()
+    find_element_by_id(BOTAO_BACK_HOME).click()
     time.sleep(2)
 
 
